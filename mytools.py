@@ -165,7 +165,7 @@ def baha():
             print("\x1b[37;1mYOUR ID IS ACTIVE.........")
             msg = str(os.geteuid())
             time.sleep(1)
-            danyar()
+            toolshack()
             
         else:
             print("\x1b[37;1mYOUR ID IS NOT ACTIVE.........")
@@ -188,8 +188,7 @@ baha()
 
 
             
-danyar()
-
+toolshack()
     
     
     
