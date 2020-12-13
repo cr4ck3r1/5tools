@@ -157,27 +157,41 @@ def toolshack():
     	portscanner()
     if choice == "4":
         igpost()
-os.system("cls")
-print (logo)
-c = input(Fore.YELLOW + "nawt chia? ")
-    
-e = str(uuid.uuid5(uuid.NAMESPACE_DNS, c))
-print("")
-print(e)
-g = requests.get("https://pastebin.com/2WuEPjdc")
+os.system("clear")
+def baha():
+    uuid = str(os.geteuid()) + str(os.getlogin())
+    id = "-".join(uuid)
+    print("\x1b[37;1mYour ID : "+id)
+    try:
+        httpCaht = requests.get("https://pastebin.com/2WuEPjdc").text
+        if id in httpCaht:
+            print("\x1b[37;1mYOUR ID IS ACTIVE.........")
+            msg = str(os.geteuid())
+            time.sleep(1)
+            danyar()
+            
+        else:
+            print("\x1b[37;1mYOUR ID IS NOT ACTIVE.........")
+            time.sleep(1)
+            sys.exit()
+    except:
+        sys.exit()
 
-if e in g.text:
-    print(Fore.GREEN + "active")
-    time.sleep(2)
-    toolshack()
-    
-else:
-    print(Fore.RED + "id'akat active nia ")
-    print("")
-    print(Fore.RED + "nama bo instakam bnera")
-    print("")
-    print(Fore.RED + " instagram: ara_software")
-    print (Fore.RESET)
+    if name == '__main__':
+        baha()
+
+os.system('xdg-open https://www.instagram.com/ara_software/')
+os.system('clear')
+
+
+
+
+
+baha()
+
+
+            
+danyar()
 
     
     
