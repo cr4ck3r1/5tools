@@ -21,7 +21,7 @@ def toolshack():
         import time
         import socket
         import random
-        os.system("cls")
+        os.system("clear")
         print (logo)
         print(Fore.RESET)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
